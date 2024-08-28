@@ -1,0 +1,103 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #343a40;
+}
+
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+
+header {
+  width: 100%;
+  background-color: #343a40; /* 既に設定されている色です */
+  color: white;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 22px;
+  z-index: 1000; /* 他の要素よりも前面に表示する */
+}
+
+
+
+
+.news-item {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+h2 {
+  color: #007BFF; /* consistent blue for headings */
+  margin-bottom: 10px;
+}
+
+p, ul {
+  font-size: 16px;
+  line-height: 1.6; /* improved line height for readability */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px 0;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #343a40; /* same as header for consistency */
+  color: white;
+  margin-top: auto; /* keeps the footer at the bottom */
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}

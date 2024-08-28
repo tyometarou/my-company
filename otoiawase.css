@@ -1,5 +1,4 @@
 
-
 html, body {
   height: 100%;
   margin: 0;
@@ -38,7 +37,6 @@ nav a:hover {
 }
 
 header {
-
   width: 100%;
   background-color: #343a40; /* 既に設定されている色です */
   color: white;
@@ -47,6 +45,7 @@ header {
   font-size: 22px;
   z-index: 1000; /* 他の要素よりも前面に表示する */
 }
+
 
 
 .company-info, .contact-info {
@@ -89,62 +88,8 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
-
-
-.company-info h3 {
-  background-color: #f8f9fa; /* 軽いグレーの背景色 */
-  padding: 10px 15px;
-  border-radius: 5px; /* 角を丸くする */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* ソフトな影を追加 */
-  margin-top: 20px; /* 上部のマージンを追加 */
-}
-
-.company-info p {
-  padding: 10px 20px;
-  background-color: #ffffff; /* 白色の背景 */
-  border-left: 5px solid #007bff; /* 青色の左ボーダーを追加 */
-  margin: 10px 0; /* 上下のマージンを調整 */
-  border-radius: 5px;
-}
-
-.company-info a {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff; /* リンクボタンの背景色 */
-  color: white;
-  text-decoration: none;
-  border-radius: 5px; /* 角を丸くする */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* リンクボタンに影を追加 */
-  margin-top: 20px; /* 上部にマージンを追加 */
-}
-
-.company-info a:hover {
-  background-color: #0056b3; /* ホバー時の背景色を暗くする */
-}
-
-
-
-
-
-.company-info .content-wrapper {
-  display: flex;
-  align-items: flex-start; /* 上揃え */
-  justify-content: space-between; /* スペースを均等に配分 */
-}
-
-.company-info .text-content {
-  flex: 1; /* テキスト領域を適切に拡張 */
-  padding-right: 20px; /* 画像との間にパディングを追加 */
-}
-
-.company-info img {
-  flex: 0 0 200px; /* 画像のサイズを固定 */
-  max-width: 200px; /* 画像の最大幅を設定 */
-  height: auto; /* 画像の高さを自動調整 */
-}
-
 
 footer {
   text-align: center;
