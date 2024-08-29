@@ -1,81 +1,4 @@
 
-/* スマートフォン（デバイス幅が600px未満） */
-@media (max-width: 599px) {
-  header, nav ul {
-      flex-direction: column;
-      text-align: center;
-  }
-  nav ul {
-    background-color: #343a40;
-      padding: 0;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: none;
-}
-
-  nav ul li {
-      margin: 5px 0; /* リストアイテムのマージンを調整 */
-  }
-
-  .company-info .content-wrapper {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .company-info .text-content, .company-info img {
-      flex: 1 0 100%; /* モバイルではテキストと画像を縦に並べる */
-      padding-right: 0; /* パディングをリセット */
-      text-align: center;
-      max-width: none; /* 画像の最大幅設定を解除 */
-  }
-
-  .company-info, .contact-info {
-      padding-top: 50px;
-      margin-top: -50px; /* モバイルではパディングとマージンを調整 */
-  }
-
-  .company-info h3, .company-info p, .company-info a {
-      text-align: center; /* テキストを中央寄せ */
-  }
-
-  footer {
-      padding: 10px; /* フッターのパディングを調整 */
-  }
-}
-
-/* タブレット（デバイス幅が600px以上と900px未満） */
-@media (min-width: 600px) and (max-width: 899px) {
-  nav ul {
-    background-color: #343a40;
-      justify-content: space-around; /* ナビゲーションリンクを均等に配置 */
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-}
-
-nav a:hover {
-    text-decoration: none;
-}
-
-  .company-info .content-wrapper {
-      flex-direction: row; /* タブレットでは横並びに戻す */
-      justify-content: space-around;
-  }
-
-  .company-info .text-content, .company-info img {
-      padding-right: 10px; /* タブレット用のパディング調整 */
-      max-width: 50%; /* 画像の最大幅を50%に */
-  }
-}
-
-
-
 
 html, body {
   height: 100%;
@@ -91,13 +14,6 @@ body {
   min-height: 100vh;
   background-color: #f4f4f4;
 }
-
-
-/* デスクトップ（デバイス幅が900px以上） */
-@media (min-width: 900px) {
-  /* 特に追加のスタイル変更は不要かもしれませんが、必要に応じてここに記述 */
-
-
 
 nav ul {
     list-style: none;
@@ -121,6 +37,10 @@ nav a:hover {
     text-decoration: none;
 }
 
+main{
+  margin:40px;
+}
+
 header {
 
   width: 100%;
@@ -142,12 +62,6 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   flex-grow: 1;
-}
-
-
-}
-main{
-  margin: 20px;
 }
 
 h2 {
